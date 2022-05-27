@@ -3,82 +3,67 @@ import React from "react";
 function HRmax() {
   function getHRmaxresults() {
     const age = document.getElementById("age").value;
-    const results = 220 - age;
-    document.getElementById("age").value = results;
-  }
-
-  function HRmaxperc() {
-    const HRmax = document.getElementById("getPerc").value;
-    const fifty = 0.5;
-    const sixty = 0.6;
-    const seventy = 0.7;
-    const eighty = 0.8;
-    const ninety = 0.9;
-    const perc = document.getElementsByName("perc");
-
-    let Max = "";
-    if (perc == 0) {
-      Max = FiftyPerc(HRmax, fifty);
-    } else if (perc == 1) {
-      Max = SixtyPerc(HRmax, sixty);
-    } else if (perc == 2) {
-      Max = SeventyPerc(HRmax, seventy);
-    } else if (perc == 3) {
-      Max = EightyPerc(HRmax, eighty);
-    } else if (perc == 4) {
-      Max = NinetyPerc(HRmax, ninety);
-    }
-
-    function FiftyPerc(HRmax, fifty) {
-      let results = HRmax * fifty;
-      return results;
-    }
-
-    function SixtyPerc(HRmax, sixty) {
-      let Max = HRmax * sixty;
-
-      return Max;
-    }
-
-    function SeventyPerc(HRmax, seventy) {
-      let Max = HRmax * seventy;
-
-      return Max;
-    }
-
-    function EightyPerc(HRmax, eighty) {
-      let Max = HRmax * eighty;
-
-      return Max;
-    }
-
-    function NinetyPerc(HRmax, ninety) {
-      let Max = HRmax * ninety;
-
-      return Max;
-    }
+    const HRmax = 220 - age;
+    const fifty = HRmax * 0.5;
+    const sixty = HRmax * 0.6;
+    const seventy = HRmax * 0.7;
+    const eighty = HRmax * 0.8;
+    const ninety = HRmax * 0.9;
+    document.getElementById("age").value = [
+      HRmax,
+      fifty,
+      sixty,
+      seventy,
+      eighty,
+      ninety,
+    ];
   }
 
   return (
     <div>
-      <h1>Hello</h1>
+      <h1>HRmax = 220 - Age</h1>
+      <p>
+        Enter your age below to get the HRmax for your age: HRmax is your max
+        bpm(beats per minute)
+      </p>
       <input type="text" id="age" placeholder="Enter Age" />
       <br />
-      <button type="button" id="getHRmax" onClick={getHRmaxresults} />
+      <button type="button" id="getHRmax" onClick={getHRmaxresults}>Get Results</button>
       <br />
+      <h3 id='50perc'>50 Percent:</h3>
 
-      <select class="percWanted" name="perc">
-        <option value="0">50 Percent</option>
-        <option value="1">60 Percent</option>
-        <option value="2">70 Percent</option>
-        <option value="3">80 Percent</option>
-        <option value="4">90 Perent</option>
-      </select>
-      <br />
-
-      <input type="text" id="getPerc" placeholder="Enter HRmax" />
-      <br />
-      <button type="btn" id="HRmacperc" onclick={HRmaxperc} />
+      <div class="table-percent">
+        <tr>
+          <td>Zone</td>
+          <td>Intensity</td>
+          <td>Percent</td>
+        </tr>
+        <tr>
+          <td>Zone 1:</td>
+          <td>Very Light</td>
+          <td>50% - 60%</td>
+        </tr>
+        <tr>
+          <td>Zone 2</td>
+          <td>Light</td>
+          <td>60% - 70%</td>
+        </tr>
+        <tr>
+          <td>Zone 3</td>
+          <td>Moderate</td>
+          <td>70% - 80%</td>
+        </tr>
+        <tr>
+          <td>Zone 4</td>
+          <td>Hard</td>
+          <td>80% - 90%</td>
+        </tr>
+        <tr>
+          <td>Zone 5</td>
+          <td>Extreme</td>
+          <td>90% - 100%</td>
+        </tr>
+      </div>
     </div>
   );
 }
