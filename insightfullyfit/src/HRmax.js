@@ -9,14 +9,7 @@ function HRmax() {
     const seventy = HRmax * 0.7;
     const eighty = HRmax * 0.8;
     const ninety = HRmax * 0.9;
-    document.getElementById("age").value = [
-      HRmax,
-      fifty,
-      sixty,
-      seventy,
-      eighty,
-      ninety,
-    ];
+    document.getElementById("age").value = HRmax
   }
 
   return (
@@ -30,7 +23,12 @@ function HRmax() {
       <br />
       <button type="button" id="getHRmax" onClick={getHRmaxresults}>Get Results</button>
       <br />
-      <h3 id='50perc'>50 Percent:</h3>
+      <h3>HRmax:</h3>
+      <h3>50 Percent:</h3><h2 id='50perc'></h2>
+      <h3>60 Percent:</h3><h2 id='60perc'></h2>
+      <h3>70 Percent:</h3>
+      <h3>80 Percent:</h3>
+      <h3>90 Percent: {getHRmaxresults}</h3>
 
       <div class="table-percent">
         <tr>
