@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function HRmax() {
   function getHRmaxresults() {
     const age = document.getElementById("age").value;
@@ -8,6 +9,7 @@ function HRmax() {
       "hrmax"
     ).innerHTML = HRmax;
   }
+  
   function get50perc() {
     const age = document.getElementById("age").value;
     const HRmax = 220 - age;
@@ -56,14 +58,13 @@ function HRmax() {
   return (
     <div>
       <h1>HRmax = 220 - Age</h1>
-      <p>
+      <h4>
         Enter your age below to get the HRmax for your age: HRmax is your max
         bpm(beats per minute)
-      </p>
-      <p id="postData"></p>
-      <input type="text" id="age" placeholder="Enter Age" />
+      </h4>
+      <input type="text" id="age" placeholder="Enter Age" required=''/>
       <br />
-      <button type="button" id="getHRmax" onClick={getHRmaxresults}>
+      <button type="button" id="getHRmax" onClick={getHRmaxresults} >
         Get Results
       </button>
       <br />
