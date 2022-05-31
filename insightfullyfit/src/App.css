@@ -9,7 +9,20 @@ form{
     background-color: blue;
 }
     
-div{
+.female{
+    text-align: left;
+}
+
+.male{
+    text-align: right;
+    
+}
+
+.ExplainPercent{
+    text-align: center;
+}
+
+#HRmaxInputs{
     text-align: center;
 }
 
