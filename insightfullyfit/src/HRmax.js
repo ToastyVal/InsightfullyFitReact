@@ -1,10 +1,10 @@
 import React from "react";
 
 function HRmax() {
-  function getHRmaxresults(){
+  function getHRmaxresults() {
     const age = document.getElementById("HRmaxAge").value;
     const HRmax = 220 - age;
-    document.getElementById('hrmax').innerHTML = HRmax;
+    document.getElementById("hrmax").innerHTML = HRmax;
   }
 
   function get50perc() {
@@ -101,26 +101,67 @@ function HRmax() {
       <div class="ExplainPercent">
         <h1>Zone 1: 50-60%</h1>
         <h3>
-          In zone 1 you will be at a Very Light workouts to get warmed up, cool
-          down, or recovery. Getting warmed up and stretched out is important
-          before moving on to other zones. If not you are more prone to injury.
+          In zone 1 you will be at a Very Light workouts/ exercises to get
+          warmed up, cool down, or recovery. Getting warmed up and stretched out
+          is important before moving on to other zones. If not you are more
+          prone to injury.
         </h3>
-        <h5>Example workouts: walking or cycling</h5>
+        <h5>
+          Example workouts: walking at casual pace, light jog, elliptical
+          machine, cycling at casual pace, and rowing at a steady pace
+        </h5>
         <h1>Zone 2: 60-70%</h1>
-        <h3>In zone 2 you will be doing Light workouts </h3>
-        <h5>Example workouts: </h5>
+        <h3>
+          In zone 2 you will be doing Light exercises/ workouts that you should
+          be able to do for a long period of time. In this zone you will be
+          improving your general endurance which means it will get better at
+          oxidizing burning fat and muscle fitness along with capillary density
+          will increase.
+        </h3>
+        <h5>
+          Example workouts: walking at casual pace, light jog, elliptical
+          machine, cycling at casual pace, and rowing at a steady pace
+        </h5>
         <h1>Zone 3: 70-80%</h1>
-        <h3>In zone 3 you will be at Moderate Level workouts </h3>
-        <h5>Example workouts:</h5>
+        <h3>
+          In zone 3 you will be at Moderate Level workouts that will improve the
+          efficiency of clood circulation in skeletal mucles along with the
+          heart. This zone will improve efficiently, make moderate efforts
+          easier, and start producing lactic acid build up in your bloodstream.
+        </h3>
+        <h5>
+          Example workouts: walking two miles in 30 minutes, biking five miles
+          in 30 minutes, swimming laps for 20 minutes, playing volleyball for 45
+          minutes
+        </h5>
         <h1>Zone 4: 80-90%</h1>
-        <h3>In zone 3 you will be at Hard level workouts and </h3>
-        <h5>Example workouts:</h5>
+        <h3>
+          In zone 3 you will be at Hard level workouts/ exercises that will be
+          aerobic and leave you breathing hard. This zone will improve your
+          speed endurance and make your body better at using carbohydrates for
+          energy. Your body will also get better at withstanding higher and
+          highre levels of lactic acid build up in your bloodstream.
+        </h3>
+        <h5>
+          Example workouts: Jump lunge. Work 20sec Rest 10sec. Explode off the
+          ground and change legs in the air on each rep, high knees. Work 20sec
+          Rest 10sec. Run on the spot, bringing your knees as high as possible,
+          jump squat, do about 8 times to complete hard intenstiy
+        </h5>
         <h1>Zone 5: 90-100%</h1>
         <h3>
-          In zone 5 you will be at the Extreme level workouts and will be for a
-          short duration
+          In zone 5 you will be at the Extreme level workouts/ exercises will be
+          for a short duration and will be using maximum efforts. The reason
+          this zone is only for a few minutes is because the lactic acid build
+          up will happen faster and will not be able to continue at this
+          intensity. This intenisty is for expercienced training and is not
+          recommended for people just starting their fitness journey.
         </h3>
-        <h5>Example workouts:</h5>
+        <h5>
+          Example workouts: do 5 rounds of 5x Back Squat or Difficult but
+          Doable, 2x Broad Jumps, 60 second rest and while resting do the Pec
+          Ball
+        </h5>
       </div>
     </div>
   );

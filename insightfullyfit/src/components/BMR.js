@@ -36,14 +36,17 @@ function BMR() {
   function convertHeight() {
     const feet = document.getElementById("feet").value;
     const inches = document.getElementById("inches").value;
-    const convert = feet * 12;
-    const addInch = convert + inches;
-    document.getElementById("convert").innerHTML = addInch;
+    const convert = feet * 12 + parseInt(inches);
+    document.getElementById("convert").innerHTML = convert;
   }
 
   return (
     <div>
-      <h1>BMR Caclulators</h1>
+      <h1>BMR(Basal Metabolic Rate)</h1>
+      <h3>
+        Basal Metabloic Rate is the number of calories your body needs to
+        accomplish its most basic(basal) life-sustaining functions.
+      </h3>
       <h5>If you do not know your height in inches enter below to convert</h5>
       <label>Feet:</label>
       <input type="number" id="feet" />
@@ -56,17 +59,28 @@ function BMR() {
         Convert Height
       </button>
       <div class="female">
-        <h1 id="FemaleFormula">BMR</h1>
+        <h1 id="FemaleFormula">BMR Formulas</h1>
         <input type="text" id="BMRage" placeholder="Enter Age" />
         <br />
         <input type="text" id="weight" placeholder="Enter Weight in lbs." />
         <br />
         <input type="text" id="height" placeholder="Enter height in inches" />
         <br />
-
+        <h3>
+          Once you have entered in your information choose gender and you will
+          recieve your results. Note: that you will recive different results
+          depending on the formula you choose but it will mean the same when it
+          comes to activities.
+        </h3>
+        <h5>
+          The Mifflin-St Jeor formula calculates yours results based on an
+          estimated average.This gives the amount of energy expended per day at
+          rest. (How many calories burned on bed rest)
+        </h5>
         <h1>
           Mifflin Results are: <h2 id="mResultsF"></h2>
         </h1>
+        <br />
         <button type="btn" id="getResults" onClick={femaleMifflin}>
           Female Mifflin
         </button>
@@ -74,6 +88,11 @@ function BMR() {
         <button type="btn" id="getResults" onClick={maleMifflin}>
           Male Mifflin
         </button>
+        <h5>
+          The Harris-Benedict is the amount of energy required to maintain the
+          body's normal metabolic activity, such as respiration, maintenance of
+          body temperature (thermogenesis), and digestion.
+        </h5>
         <h1>
           Harris Results are: <h2 id="hResultsF"></h2>
         </h1>
