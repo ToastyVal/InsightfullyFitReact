@@ -1,42 +1,42 @@
 import React from "react";
 
 function HRmax() {
-  function getHRmaxresults() {
-    const age = document.getElementById("age").value;
+  function getHRmaxresults(){
+    const age = document.getElementById("HRmaxAge").value;
     const HRmax = 220 - age;
-    document.getElementById("hrmax").innerHTML = HRmax;
+    document.getElementById('hrmax').innerHTML = HRmax;
   }
 
   function get50perc() {
-    const age = document.getElementById("age").value;
+    const age = document.getElementById("HRmaxAge").value;
     const HRmax = 220 - age;
     const fifty = HRmax * 0.5;
     document.getElementById("50perc").innerHTML = fifty;
   }
 
   function get60perc() {
-    const age = document.getElementById("age").value;
+    const age = document.getElementById("HRmaxAge").value;
     const HRmax = 220 - age;
     const sixty = HRmax * 0.6;
     document.getElementById("60perc").innerHTML = sixty;
   }
 
   function get70perc() {
-    const age = document.getElementById("age").value;
+    const age = document.getElementById("HRmaxAge").value;
     const HRmax = 220 - age;
     const seventy = HRmax * 0.7;
     document.getElementById("70perc").innerHTML = seventy;
   }
 
   function get80perc() {
-    const age = document.getElementById("age").value;
+    const age = document.getElementById("HRmaxAge").value;
     const HRmax = 220 - age;
     const eighty = HRmax * 0.8;
     document.getElementById("80perc").innerHTML = eighty;
   }
 
   function get90perc() {
-    const age = document.getElementById("age").value;
+    const age = document.getElementById("HRmaxAge").value;
     const HRmax = 220 - age;
     const ninety = HRmax * 0.9;
     document.getElementById("90perc").innerHTML = ninety;
@@ -58,10 +58,10 @@ function HRmax() {
           below explain what that zone does to your body such as improving
           endurance, best for fat lost, muscle gain, etc.
         </h6>
-        <input type="text" id="age" placeholder="Enter Age" required />
+        <input type="text" id="HRmaxAge" placeholder="Enter Age" required />
         <br />
-        <button type="button" id="getHRmax" onClick={getHRmaxresults}>
-          Get Results
+        <button type="btn" id="getHRmaxResults" onClick={getHRmaxresults}>
+          Get 50%
         </button>
         <br />
         <h3>
