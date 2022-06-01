@@ -41,7 +41,7 @@ function BMR() {
   }
 
   return (
-    <div>
+    <div class='BMR'>
       <h1>BMR(Basal Metabolic Rate)</h1>
       <h3>
         Basal Metabloic Rate is the number of calories your body needs to
@@ -56,7 +56,7 @@ function BMR() {
         Height in inches: <h3 id="convert"></h3>
       </h3>
       <button type="btn" id="convertHeight" onClick={convertHeight}>
-        Convert Height
+        Convert Height to inches
       </button>
       <div class="female">
         <h1 id="FemaleFormula">BMR Formulas</h1>
@@ -103,6 +103,10 @@ function BMR() {
         <button type="btn" id="getResults" onClick={maleHarris}>
           Male Harris
         </button>
+      </div>
+      <div class='Activity'>
+        <h4>Calories needed for Seditary Exercise:<h5 id='seditary'></h5></h4>
+          <button type='btn' id="sed">Get Results</button>
       </div>
     </div>
   );

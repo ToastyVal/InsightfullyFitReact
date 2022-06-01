@@ -1,7 +1,7 @@
 *{
     background-color: lightgrey;
     text-align: center;
-    align-items: center;
+    align-content: center;
 }
 
 button{
@@ -25,5 +25,9 @@ form{
 }
 
 #HRmaxInputs{
+    text-align: center;
+}
+
+.BMR{
     text-align: center;
 }
