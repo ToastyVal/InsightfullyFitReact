@@ -40,30 +40,6 @@ function BMR() {
     document.getElementById("convert").innerHTML = convert;
   }
 
-  function MifflinSedentary() {
-    const sed = document.getElementById("mResultsF").value;
-    const results = sed * 1.375;
-    document.getElementById("sedentary").innerHTML = results;
-  }
-
-  function HarrisSedentary() {
-    const sed = document.getElementById("hResultsF").value;
-    const results = sed * 1.375;
-    document.getElementById("sedentary").innerHTML = results;
-  }
-  
-  function MifflinModerate() {
-    const mod = document.getElementById("mResultsF").value;
-    const results = mod * 1.55;
-    document.getElementById("moderate").innerHTML = results;
-  }
-
-  function HarrisModerate() {
-    const mod = document.getElementById("hResultsF").value;
-    const results = mod * 1.55;
-    document.getElementById("moderate").innerHTML = results;
-  }
-
   return (
     <div class="BMR">
       <h1>BMR(Basal Metabolic Rate)</h1>
@@ -84,6 +60,14 @@ function BMR() {
       </button>
       <div class="female">
         <h1 id="FemaleFormula">BMR Formulas</h1>
+        <h2>
+          Mifflin Formulas:
+          <br /> Male: 10 * weight + 6.25 * height - 5.677 * age - 161 <br />{" "}
+          Female: 10 * weight + 6.25 * height - 5 * age + 5 <br /> Harris
+          Formulas:
+          <br /> Male: 9.247 * weight + 3.098 * height - 4.33 * age + 447.593
+          <br /> Female: 13.397 * weight + 4.799 * height - 5.677 * age + 88.362
+        </h2>
         <input type="text" id="BMRage" placeholder="Enter Age" />
         <br />
         <input type="text" id="weight" placeholder="Enter Weight in lbs." />
@@ -126,28 +110,6 @@ function BMR() {
         <br />
         <button type="btn" id="getResults" onClick={maleHarris}>
           Male Harris
-        </button>
-      </div>
-      <div class="Activity">
-        <h4>
-          Calories needed for Sedentary Exercise: working out 1-2 days a week
-          <h5 id="sedentary"></h5>
-        </h4>
-        <button type="btn" id="sed" onClick={MifflinSedentary}>
-          Mifflin Results
-        </button>
-        <button type="btn" id="sed" onClick={HarrisSedentary}>
-          Harris Results
-        </button>
-        <h4>
-          Calories needed for Moderate Exercise: working out 3-4 days a week
-          <h5 id="moderate"></h5>
-        </h4>
-        <button type="btn" id="mod" onClick={MifflinModerate}>
-          Mifflin Results
-        </button>
-        <button type="btn" id="mod" onClick={HarrisModerate}>
-          Harris Results
         </button>
       </div>
     </div>

@@ -140,7 +140,7 @@ function HRmax() {
           aerobic and leave you breathing hard. This zone will improve your
           speed endurance and make your body better at using carbohydrates for
           energy. Your body will also get better at withstanding higher and
-          highre levels of lactic acid build up in your bloodstream.
+          higher levels of lactic acid build up in your bloodstream.
         </h3>
         <h5>
           Example workouts:<br /> Jump lunge. Work 20sec Rest 10sec. Explode off the
