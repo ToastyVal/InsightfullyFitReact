@@ -46,18 +46,18 @@ function HRmax() {
     <div>
       <div id="HRmaxInputs">
         <h1>HRmax = 220 - Age</h1>
-        <h4>
+        <h3>
           Enter your age below to get the HRmax for your age: HRmax is your max
           bpm(beats per minute)
-        </h4>
-        <h6>
+        </h3>
+        <h4>
           The HRmax Caclulator is meant to give you your max hearts beats per
           minute and allow you to choose one or all percentages to see your max
           at that percent. Afterwards you can look at the Zones below to see
           what exercises or workouts are meant for that percentage. The zones
           below explain what that zone does to your body such as improving
           endurance, best for fat lost, muscle gain, etc.
-        </h6>
+        </h4>
         <input type="text" id="HRmaxAge" placeholder="Enter Age" required />
         <br />
         <button type="btn" id="getHRmaxResults" onClick={getHRmaxresults}>
@@ -107,7 +107,7 @@ function HRmax() {
           prone to injury.
         </h3>
         <h5>
-          Example workouts: walking at casual pace, light jog, elliptical
+          Example workouts:<br /> walking at casual pace, light jog, elliptical
           machine, cycling at casual pace, and rowing at a steady pace
         </h5>
         <h1>Zone 2: 60-70%</h1>
@@ -119,7 +119,7 @@ function HRmax() {
           will increase.
         </h3>
         <h5>
-          Example workouts: walking at casual pace, light jog, elliptical
+          Example workouts:<br /> walking at casual pace, light jog, elliptical
           machine, cycling at casual pace, and rowing at a steady pace
         </h5>
         <h1>Zone 3: 70-80%</h1>
@@ -130,7 +130,7 @@ function HRmax() {
           easier, and start producing lactic acid build up in your bloodstream.
         </h3>
         <h5>
-          Example workouts: walking two miles in 30 minutes, biking five miles
+          Example workouts:<br /> walking two miles in 30 minutes, biking five miles
           in 30 minutes, swimming laps for 20 minutes, playing volleyball for 45
           minutes
         </h5>
@@ -143,7 +143,7 @@ function HRmax() {
           highre levels of lactic acid build up in your bloodstream.
         </h3>
         <h5>
-          Example workouts: Jump lunge. Work 20sec Rest 10sec. Explode off the
+          Example workouts:<br /> Jump lunge. Work 20sec Rest 10sec. Explode off the
           ground and change legs in the air on each rep, high knees. Work 20sec
           Rest 10sec. Run on the spot, bringing your knees as high as possible,
           jump squat, do about 8 times to complete hard intenstiy
@@ -158,7 +158,7 @@ function HRmax() {
           recommended for people just starting their fitness journey.
         </h3>
         <h5>
-          Example workouts: do 5 rounds of 5x Back Squat or Difficult but
+          Example workouts:<br /> do 5 rounds of 5x Back Squat or Difficult but
           Doable, 2x Broad Jumps, 60 second rest and while resting do the Pec
           Ball
         </h5>

@@ -40,8 +40,32 @@ function BMR() {
     document.getElementById("convert").innerHTML = convert;
   }
 
+  function MifflinSedentary() {
+    const sed = document.getElementById("mResultsF").value;
+    const results = sed * 1.375;
+    document.getElementById("sedentary").innerHTML = results;
+  }
+
+  function HarrisSedentary() {
+    const sed = document.getElementById("hResultsF").value;
+    const results = sed * 1.375;
+    document.getElementById("sedentary").innerHTML = results;
+  }
+  
+  function MifflinModerate() {
+    const mod = document.getElementById("mResultsF").value;
+    const results = mod * 1.55;
+    document.getElementById("moderate").innerHTML = results;
+  }
+
+  function HarrisModerate() {
+    const mod = document.getElementById("hResultsF").value;
+    const results = mod * 1.55;
+    document.getElementById("moderate").innerHTML = results;
+  }
+
   return (
-    <div class='BMR'>
+    <div class="BMR">
       <h1>BMR(Basal Metabolic Rate)</h1>
       <h3>
         Basal Metabloic Rate is the number of calories your body needs to
@@ -104,9 +128,27 @@ function BMR() {
           Male Harris
         </button>
       </div>
-      <div class='Activity'>
-        <h4>Calories needed for Seditary Exercise:<h5 id='seditary'></h5></h4>
-          <button type='btn' id="sed">Get Results</button>
+      <div class="Activity">
+        <h4>
+          Calories needed for Sedentary Exercise: working out 1-2 days a week
+          <h5 id="sedentary"></h5>
+        </h4>
+        <button type="btn" id="sed" onClick={MifflinSedentary}>
+          Mifflin Results
+        </button>
+        <button type="btn" id="sed" onClick={HarrisSedentary}>
+          Harris Results
+        </button>
+        <h4>
+          Calories needed for Moderate Exercise: working out 3-4 days a week
+          <h5 id="moderate"></h5>
+        </h4>
+        <button type="btn" id="mod" onClick={MifflinModerate}>
+          Mifflin Results
+        </button>
+        <button type="btn" id="mod" onClick={HarrisModerate}>
+          Harris Results
+        </button>
       </div>
     </div>
   );
